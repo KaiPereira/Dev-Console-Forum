@@ -16,7 +16,7 @@ function send(message) {
             redirect: 'follow'
         };
     
-        fetch("https://kaipereira-friendly-meme-74pqgxgw946frqgx-5000.preview.app.github.dev/create-message", requestOptions)
+        fetch("https://dev-console-forum.kaipereira2021.repl.co/create-message", requestOptions)
             .catch(error => console.log('error', error))
     }
 }
@@ -37,7 +37,7 @@ function forumMessageUpdate() {
             redirect: 'follow'
         };
     
-        fetch("https://kaipereira-friendly-meme-74pqgxgw946frqgx-5000.preview.app.github.dev/get-new-messages", requestOptions)
+        fetch("https://dev-console-forum.kaipereira2021.repl.co/get-new-messages", requestOptions)
             .then(response => response.text())
             .then(result => {
                 if (message !== result) {
@@ -61,7 +61,7 @@ function getPreviousMessages() {
         redirect: 'follow'
     };
 
-    fetch("https://kaipereira-friendly-meme-74pqgxgw946frqgx-5000.preview.app.github.dev/all", requestOptions)
+    fetch("https://dev-console-forum.kaipereira2021.repl.co/all", requestOptions)
         .then(response => response.text())
         .then(results => {
             const resultsParsed = JSON.parse(results)
